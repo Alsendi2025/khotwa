@@ -1,0 +1,6 @@
+# السماح لجميع محركات البحث بالزحف
+User-agent: *
+Allow: /
+
+# رابط خريطة الموقع المباشر
+Sitemap: https://khotwa-weld.vercel.app/sitemap.xml
