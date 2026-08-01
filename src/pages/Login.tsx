@@ -4,9 +4,11 @@ import { Loader2, Footprints, LogIn } from 'lucide-react';
 import supabase from '../lib/supabase';
 import { signInWithGoogle } from '../lib/googleAuth';
 import { useLang } from '../lib/i18n';
+import { usePageMeta } from '../lib/seo';
 
 export default function Login() {
   const { tr } = useLang();
+  usePageMeta('login');
   const nav = useNavigate();
   const [isSignUp, setIsSignUp] = useState(false);
   const [email, setEmail] = useState('');
