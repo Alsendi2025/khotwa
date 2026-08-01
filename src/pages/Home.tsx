@@ -39,17 +39,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* Source download banner */}
-      <div className="max-w-6xl mx-auto px-4 pt-4">
-        <a
-          href="/khotwa-source.zip"
-          download="khotwa-source.zip"
-          className="flex items-center justify-center gap-2.5 rounded-2xl bg-teal-800 text-white font-bold py-3.5 px-5 shadow-lg hover:bg-teal-700 active:scale-[0.99] transition-all text-sm md:text-base"
-        >
-          <Download size={20} className="shrink-0" />
-          {tr({ ar: 'تنزيل ملف khotwa-source.zip — الكود المصدري الكامل للمنصة', en: 'Download khotwa-source.zip — full platform source code' })}
-        </a>
-      </div>
 
       {/* Hero */}
       <section className="relative overflow-hidden">
@@ -127,8 +116,5 @@ export default function Home() {
         )}
       </section>
 
-      {/* قسم مؤقت — أدوات المطور للمعاينة */}
-      <DevTools />
-    </div>
   );
 }
