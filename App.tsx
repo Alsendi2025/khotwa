@@ -25,6 +25,10 @@ import Writing from './pages/ai/Writing';
 import Citation from './pages/ai/Citation';
 import CvBuilder from './pages/ai/CvBuilder';
 import Majors from './pages/community/Majors';
+import About from './pages/static/About';
+import Contact from './pages/static/Contact';
+import Privacy from './pages/static/Privacy';
+import Terms from './pages/static/Terms';
 import Scholarships from './pages/community/Scholarships';
 import Projects from './pages/community/Projects';
 import Notes from './pages/community/Notes';
@@ -69,6 +73,14 @@ export default function App() {
               <Route path="/forums" element={<Forums />} />
               <Route path="/market" element={<Market />} />
               <Route path="/guide" element={<Guide />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
               <Route path="*" element={<Home />} />
             </Routes>
           </Layout>
