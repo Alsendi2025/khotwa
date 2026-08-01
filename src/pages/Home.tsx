@@ -39,7 +39,6 @@ export default function Home() {
 
   return (
     <div>
-
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(13,110,99,0.14),transparent_60%)]" />
@@ -115,6 +114,6 @@ export default function Home() {
           ))
         )}
       </section>
-
+ </div>
   );
-}
+};
