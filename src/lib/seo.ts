@@ -8,145 +8,135 @@ const BRAND = { ar: 'خطوة — منصة الطالب الذكية', en: 'Khot
 
 /** وصف مخصص وكلمات مفتاحية مستهدفة لكل صفحة وخدمة */
 export const PAGE_META: Record<string, Meta> = {
-  home: {
-    ar: 'منصة خطوة: 26 خدمة مجانية للطلاب — معلم ذكي بالذكاء الاصطناعي، ملخص PDF، مولد اختبارات، أدوات PDF كاملة، حاسبة المعدل، دليل الجامعات والمنح، منتديات وسوق طلابي. كل أدوات الطالب في مكان واحد.',
-    en: 'Khotwa: 26 free student services — AI tutor, PDF summarizer, quiz generator, full PDF toolkit, GPA calculator, universities & scholarships guide, forums and marketplace.',
-    kw: 'منصة طلابية, أدوات الطالب, ذكاء اصطناعي للدراسة, student platform, free study tools, خطوة',
-  },
-  login: {
-    ar: 'سجّل الدخول إلى منصة خطوة للمشاركة في المنتديات ومكتبة الملخصات وسوق الأدوات المستعملة — بالبريد الإلكتروني أو حساب Google.',
-    en: 'Sign in to Khotwa to join forums, notes library and the student marketplace — via email or Google.',
-    kw: 'تسجيل دخول, حساب طالب, login, student account',
-  },
-  gpa: {
-    ar: 'حاسبة المعدل التراكمي أونلاين مجاناً: نظام 4.0 و 5.0 والنسبة المئوية، حساب معدل الفصل والتراكمي، والتنبؤ بالمعدل المطلوب لتحقيق هدفك.',
-    en: 'Free online GPA calculator: 4.0, 5.0 and percentage scales, term & cumulative GPA, plus target GPA prediction.',
-    kw: 'حاسبة المعدل التراكمي, حساب GPA, معدل الفصل, GPA calculator, CGPA, نظام 5 من 4',
-  },
-  math: {
-    ar: 'محلل رياضيات مجاني: تبسيط التعابير، حساب المشتقات، تقييم الدوال، مع رسم بياني تفاعلي فوري للدوال الرياضية في متصفحك.',
-    en: 'Free math solver: simplify expressions, compute derivatives, evaluate functions with instant interactive graphing.',
-    kw: 'حل مسائل رياضيات, رسم دوال, مشتقات, math solver, function plotter, graphing calculator',
-  },
-  latex: {
-    ar: 'محرر LaTeX مباشر مع معاينة فورية بمحرك KaTeX: اكتب المعادلات الرياضية والرموز العلمية وانسخ الكود جاهزاً لبحثك.',
-    en: 'Live LaTeX editor with instant KaTeX preview: write math equations and scientific symbols, copy code for your paper.',
-    kw: 'محرر لاتك, معادلات رياضية, LaTeX editor, KaTeX, equation editor',
-  },
-  schedule: {
-    ar: 'منظم الجدول الدراسي الأسبوعي مع تذكيرات الاختبارات وعدّاد الأيام المتبقية — نظّم محاضراتك ومعاملك واختباراتك في مكان واحد.',
-    en: 'Weekly class timetable organizer with exam reminders and countdown — classes, labs and exams in one place.',
-    kw: 'جدول دراسي, تنظيم المحاضرات, تذكير اختبارات, class schedule, timetable, exam reminder',
-  },
-  focus: {
-    ar: 'مؤقت بومودورو للمذاكرة مع أصوات محيطة (مطر، أمواج، مدفأة) مولّدة محلياً — ارفع تركيزك بجلسات 25 دقيقة وراحات منظمة.',
-    en: 'Pomodoro study timer with locally-synthesized ambient sounds (rain, waves, fireplace) — 25-minute deep focus sessions.',
-    kw: 'بومودورو, مؤقت مذاكرة, تركيز, Pomodoro timer, focus timer, study sounds',
-  },
-  budget: {
-    ar: 'مخطط مصروف الطالب: سجّل دخلك ومصروفاتك حسب الفئة (طعام، مواصلات، كتب) مع رسوم توضيحية ورصيد لحظي.',
-    en: 'Student budget planner: track income & expenses by category (food, transport, books) with charts and live balance.',
-    kw: 'ميزانية الطالب, تتبع مصروفات, إدارة مالية, student budget, expense tracker',
-  },
-  'pdf-merge': {
-    ar: 'دمج وتقسيم ملفات PDF مجاناً وبخصوصية كاملة — المعالجة تتم في متصفحك دون رفع الملفات لأي خادم. ادمج عدة ملفات أو استخرج صفحات محددة.',
-    en: 'Merge & split PDF files free with full privacy — processing happens in your browser, no uploads. Merge files or extract page ranges.',
-    kw: 'دمج PDF, تقسيم PDF, استخراج صفحات, merge PDF, split PDF, بدون رفع',
-  },
-  'pdf-pages': {
-    ar: 'ضغط PDF وتنظيم الصفحات: أعد ترتيب الصفحات بالسحب، دوّرها، احذفها، واضغط حجم الملف — كل ذلك محلياً في المتصفح.',
-    en: 'Compress PDF & manage pages: reorder, rotate, delete pages and shrink file size — all locally in your browser.',
-    kw: 'ضغط PDF, تصغير حجم PDF, ترتيب صفحات, compress PDF, reduce PDF size, rotate pages',
-  },
-  'pdf-protect': {
-    ar: 'حماية PDF بكلمة مرور أو إزالة الحماية من ملفاتك — تشفير وفك تشفير محلي 100% دون مغادرة الملف لجهازك.',
-    en: 'Password-protect PDFs or remove passwords — 100% local encryption/decryption, files never leave your device.',
-    kw: 'حماية PDF بكلمة سر, فك حماية PDF, تشفير ملفات, protect PDF, unlock PDF, PDF password',
-  },
-  ocr: {
-    ar: 'استخراج النصوص من الصور (OCR) بالعربية والإنجليزية مجاناً — حوّل صور المستندات والملازم إلى نص قابل للنسخ والتعديل في متصفحك.',
-    en: 'Free Arabic & English OCR — extract editable text from document photos and scans, right in your browser.',
-    kw: 'استخراج نص من صورة, OCR عربي, تحويل صورة الى نص, image to text, Arabic OCR, Tesseract',
-  },
-  convert: {
-    ar: 'محول ملفات مجاني: صور إلى PDF، PDF إلى صور PNG عالية الجودة، وعروض PPTX إلى PDF — تحويل فوري محلي دون رفع.',
-    en: 'Free file converter: images to PDF, PDF to high-quality PNG images, and PPTX to PDF — instant local conversion.',
-    kw: 'تحويل صور الى PDF, تحويل PDF الى صور, PPT الى PDF, image to PDF, PDF to image, converter',
-  },
-  'pdf-watermark': {
-    ar: 'أضف علامة مائية نصية (تدعم العربية) أو وقّع ملفات PDF برسم توقيعك بيدك — أدوات توثيق ملفاتك مجاناً في المتصفح.',
-    en: 'Add a text watermark (Arabic supported) or hand-draw your signature onto PDFs — free document tools in the browser.',
-    kw: 'علامة مائية PDF, توقيع PDF, watermark PDF, sign PDF, إمضاء إلكتروني',
-  },
-  'image-tools': {
-    ar: 'فلتر ماسح ضوئي لصور المستندات وإزالة خلفية الصور الشخصية للسيرة الذاتية — معالجة صور فورية محلية مجانية.',
-    en: 'Scanner filter for document photos and headshot background remover for CVs — instant free local image processing.',
-    kw: 'إزالة خلفية الصورة, فلتر مسح ضوئي, صورة شخصية للسيرة, background remover, scanner filter',
-  },
   'ai-tutor': {
-    ar: 'معلم ذكي بالذكاء الاصطناعي يشرح أي مفهوم دراسي خطوة بخطوة بالعربية — رياضيات، فيزياء، برمجة، اقتصاد ولكل المستويات.',
-    en: 'AI tutor explaining any concept step-by-step — math, physics, coding, economics, for every level.',
-    kw: 'معلم ذكاء اصطناعي, شرح دروس, مساعد دراسة, AI tutor, homework help, study assistant',
+    ar: 'استخدم أداة المعلم الذكي عبر منصة خطوة لتبسيط المفاهيم الأكاديمية والمناهج الدراسية مجاناً باستغلال تقنيات الذكاء الاصطناعي المتقدمة للطلاب والباحثين.',
+    en: 'Use the AI Tutor tool on Khotwa to simplify academic concepts and curricula for free, leveraging advanced AI technologies for students and researchers.',
+    kw: 'معلم ذكي, AI tutor, شرح دروس, study tutor',
   },
   summarizer: {
-    ar: 'ملخص المستندات بالذكاء الاصطناعي: ارفع PDF أو ملفاً نصياً واحصل على النقاط الرئيسية فوراً، ثم اسأل أسئلة عن المحتوى وأجب منه مباشرة.',
-    en: 'AI document summarizer: upload a PDF or text file, get key points instantly, then ask questions answered from the content.',
-    kw: 'تلخيص PDF, ملخص ابحاث, تلخيص بالذكاء الاصطناعي, PDF summarizer, AI summary, document QA',
+    ar: 'احصل على تلخيص سريع ودقيق للملفات والأبحاث العلمية والكتب بصيغ متعددة مع استخراج أهم النقاط والمحاور الرئيسية عبر أداة ملخص الأبحاث من منصة خطوة.',
+    en: 'Get fast, accurate summaries of documents, research papers and books in multiple formats, extracting key points and main topics using Khotwa\'s Summarizer.',
+    kw: 'تلخيص, PDF summarizer, ملخص ابحاث, document summary',
   },
   quiz: {
-    ar: 'مولد اختبارات وبطاقات مراجعة ذكية: حوّل ملزمتك أو أي نص إلى أسئلة اختيار من متعدد مع شرح الإجابات وبطاقات Flashcards تفاعلية.',
-    en: 'AI quiz & flashcard generator: turn notes into multiple-choice questions with explanations and interactive flashcards.',
-    kw: 'مولد اسئلة, اختبار من نص, بطاقات مراجعة, quiz generator, flashcards, MCQ maker',
+    ar: 'أنشئ اختبارات تفاعلية وبطاقات استذكار تلقائياً من محتوى المحاضرات والكتب لمراجعة المواد الجامعية والدراسية بذكاء على منصة خطوة.',
+    en: 'Automatically generate interactive quizzes and flashcards from lecture notes and books to smartly review university material on Khotwa.',
+    kw: 'اختبارات, quiz generator, بطاقات ذاكرة, flashcards',
   },
   writing: {
-    ar: 'مساعد الكتابة الأكاديمية بالذكاء الاصطناعي: تدقيق لغوي، إعادة صياغة، أسلوب أكاديمي رسمي، توسيع وتلخيص — بالعربية والإنجليزية.',
-    en: 'AI academic writing assistant: proofreading, rephrasing, formal tone, expanding & shortening — Arabic and English.',
-    kw: 'تدقيق لغوي, إعادة صياغة, كتابة اكاديمية, proofreading, paraphrasing tool, academic writing',
+    ar: 'أداة المساعد الأكاديمي للكتابة على منصة خطوة تتيح لك كتابة وتحسين المقالات والأوراق الأكاديمية وصياغة النصوص باحترافية وبشكل خالي من الأخطاء.',
+    en: 'The Academic Writing Assistant helps you write and improve essays and academic papers professionally and error-free on Khotwa.',
+    kw: 'مساعد كتابة, writing assistant, proofreading, كتابة اكاديمية',
   },
   citation: {
-    ar: 'مولد المراجع والاستشهادات: أنشئ مراجع بأنماط APA و MLA و Harvard و IEEE تلقائياً للكتب والمقالات والمواقع بضغطة واحدة.',
-    en: 'Citation generator: create APA, MLA, Harvard & IEEE references for books, articles and websites in one click.',
-    kw: 'توثيق مراجع, APA بالعربي, مولد اقتباسات, citation generator, APA MLA Harvard IEEE, references',
+    ar: 'قم بتوليد التوثيق والاستشهادات المرجعية الأكاديمية تلقائياً بمختلف الأساليب العلمية مثل APA و MLA و Harvard بضغطة زر واحدة عبر منصة خطوة.',
+    en: 'Automatically generate academic citations in APA, MLA, Harvard and other styles with one click on Khotwa.',
+    kw: 'توثيق مراجع, citation generator, APA MLA, مراجع',
   },
   cv: {
-    ar: 'منشئ سيرة ذاتية ورسائل دافع بالذكاء الاصطناعي: أدخل بياناتك واحصل على سيرة احترافية أو رسالة دافع للمنح مع تصدير PDF يدعم العربية.',
-    en: 'AI CV & motivation letter builder: enter your details, get a professional resume or scholarship letter with Arabic-ready PDF export.',
-    kw: 'انشاء سيرة ذاتية, رسالة دافع, CV بالذكاء الاصطناعي, resume builder, motivation letter, CV maker',
+    ar: 'اصنع سيرة ذاتية احترافية واكتب خطاب الدافع المخصص للتقديم على المنح الدراسية والفرص الوظيفية بنجاح من خلال منصة خطوة.',
+    en: 'Create a professional CV and tailored cover letters for scholarships and job applications using Khotwa\'s CV builder.',
+    kw: 'سيرة ذاتية, CV builder, resume maker, خطاب دافع',
+  },
+  gpa: {
+    ar: 'احسب معدلك الفصلي والتراكمي الجامعي (GPA) بدقة عالية وفق نظام الساعات المعتمدة مع إمكانية توقع المعدل المستهدف عبر منصة خطوة.',
+    en: 'Calculate your term and cumulative GPA accurately according to credit hours, with target GPA prediction on Khotwa.',
+    kw: 'حاسبة المعدل, GPA calculator, معدل تراكمي',
+  },
+  math: {
+    ar: 'حل المعادلات الرياضية المعقدة ورسم الدوال البيانية خطوة بخ��وة بالذكاء الاصطناعي عبر أداة محلل الرياضيات المتقدمة مجاناً على منصة خطوة.',
+    en: 'Solve complex math problems and graph functions step-by-step with the AI-powered Math Analyzer on Khotwa.',
+    kw: 'حل مسائل رياضيات, math solver, رسم دوال, graphing calculator',
+  },
+  latex: {
+    ar: 'محرّر ومحرك تنسيق معادلات ومستندات LaTeX الأكاديمية أونلاين مع المعاينة الفورية والتصدير المباشر للمقالات البحثية على منصة خطوة.',
+    en: 'Online LaTeX editor and renderer with instant preview and export, ideal for academic equations and research papers on Khotwa.',
+    kw: 'محرر LaTeX, KaTeX, معادلات, LaTeX editor',
+  },
+  schedule: {
+    ar: 'نظم جدولك الدراسي الأسبوعي والمواعيد الأكاديمية والمحاضرات بشكل تفاعلي لزيادة تحصيلك الدراسي باستخدام أداة الجدول من منصة خطوة.',
+    en: 'Organize your weekly class timetable, exam reminders and academic schedule interactively to boost study productivity on Khotwa.',
+    kw: 'جدول دراسي, timetable, منظم محاضرات',
+  },
+  focus: {
+    ar: 'هيئ بيئة دراسة هادئة تعتمد تقنية البومودورو والأصوات الخلفية المحفزة لزيادة التركيز والإنتاجية الدراسية اليومية على منصة خطوة.',
+    en: 'Create a calm study environment with a Pomodoro timer and ambient sounds to increase focus and daily study productivity on Khotwa.',
+    kw: 'تركيز, Pomodoro, مؤقت مذاكرة, focus timer',
+  },
+  budget: {
+    ar: 'تتبع وادارة ميزانية الطالب ومتابعة المصاريف والمدخرات الشخصية والنفقات التقديرية خلال فترة الدراسة عبر منصة خطوة.',
+    en: 'Track and manage student budgets, monitor expenses and savings with charts and live balance on Khotwa.',
+    kw: 'ميزانية الطالب, expense tracker, تتبع مصاريف',
+  },
+  'pdf-merge': {
+    ar: 'أدوات دمج وتقسيم ملفات PDF أونلاين مجاناً؛ ادمج عدة مستندات في ملف واحد أو جزئ الملفات الكبيرة بسهولة وأمان على منصة خطوة.',
+    en: 'Merge and split PDF files online for free; combine documents or extract pages securely on Khotwa.',
+    kw: 'دمج PDF, تقسيم PDF, merge split PDF',
+  },
+  'pdf-pages': {
+    ar: 'قلل حجم ملفات PDF مع الحفاظ على الجودة وقم بإعادة ترتيب أو حذف الصفحات غير المرغوبة من مستنداتك الدراسية عبر منصة خطوة.',
+    en: 'Compress PDFs and manage pages: reorder, rotate, delete and reduce file size locally on Khotwa.',
+    kw: 'ضغط PDF, ترتيب صفحات, تقليل حجم PDF',
+  },
+  'pdf-protect': {
+    ar: 'اضف كلمة سر لحماية مستندات PDF الخاصة بك أو فك الحماية عنها بأمان وسرعة تامة دون رفع الملفات على خوادم خارجية.',
+    en: 'Password-protect PDFs or remove passwords locally and securely without uploading files on Khotwa.',
+    kw: 'حماية PDF, فك حماية PDF, كلمة مرور PDF',
+  },
+  ocr: {
+    ar: 'حوّل الصور والمستندات الممسوحة ضوئياً إلى نص عربي وإنجليزي قابل للتحرير والنسخ باستخدام أداة OCR الذكية من منصة خطوة.',
+    en: 'Convert images and scanned documents into editable Arabic and English text using Khotwa\'s OCR tool.',
+    kw: 'OCR عربي, تحويل صورة الى نص, استخراج نص',
+  },
+  convert: {
+    ar: 'حوّل صيغ الملفات والمستندات والصور والأوفيس أونلاين بسرعة وبجودة ��الية دون الحاجة لتثبيت برامج عبر أداة تحويل الصيغ في منصة خطوة.',
+    en: 'Convert files and documents online (images, PDFs, PPTX) quickly and with high quality using Khotwa\'s converter.',
+    kw: 'محول صيغ, file converter, تحويل ملفات',
+  },
+  'pdf-watermark': {
+    ar: 'أضف توقيعك الإلكتروني أو علامة مائية مخصصة على ملفات الـ PDF لحماية ملكيتك الفكرية وحقوق أبحاثك الأكاديمية على منصة خطوة.',
+    en: 'Add an electronic signature or custom watermark to PDFs to protect intellectual property on Khotwa.',
+    kw: 'علامة مائية, توقيع PDF, watermark',
+  },
+  'image-tools': {
+    ar: 'أدوات معالجة الصور الذكية لإزالة الخلفية بنقرة واحدة وتعديل جودة الصور الشخصية والأكاديمية فورياً مجاناً على منصة خطوة.',
+    en: 'Smart image tools for background removal and instant quality adjustments for profile and academic images on Khotwa.',
+    kw: 'إزالة خلفية, background remover, image editor',
   },
   majors: {
-    ar: 'دليل التخصصات والجامعات: موسوعة جامعات اليمن والخليج ومصر والأردن — الكليات والبرامج والدرجات العلمية مع الروابط الرسمية وأهم التخصصات المطلوبة في سوق العمل.',
-    en: 'Majors & universities directory: Yemen, Gulf, Egypt & Jordan — faculties, programs and degrees with official links, plus top in-demand majors.',
-    kw: 'دليل الجامعات, تخصصات جامعية, جامعات اليمن, جامعات السعودية, أفضل التخصصات, university guide, majors',
+    ar: 'استكشف دليل التخصصات الجامعية لمعرفة مجالات العمل المستقبلية وشروط القبول والمحتوى الدراسي لمساعدتك في اختيار تخصصك عبر منصة خطوة.',
+    en: 'Explore university majors, admission requirements and study content to help choose your field via Khotwa\'s majors guide.',
+    kw: 'دليل تخصصات, majors guide, ادارة اختيار تخصص',
   },
   scholarships: {
-    ar: 'بوابة المنح الدراسية: منح ممولة بالكامل للبكالوريوس والماجستير والدكتوراه (تشيفننغ، فولبرايت، إيراسموس، كاوست) مع المواعيد النهائية وروابط التقديم.',
-    en: 'Scholarships portal: fully-funded bachelor, master & PhD scholarships (Chevening, Fulbright, Erasmus, KAUST) with deadlines and links.',
-    kw: 'منح دراسية مجانية, منح ممولة بالكامل, منح ماجستير, scholarships, fully funded, study abroad',
+    ar: 'تصفح أحدث المنح الدراسية المموّلة بالكامل والفرص التدريبية والمؤتمرات والمسابقات الطلابية المحدثة يومياً على منصة خطوة.',
+    en: 'Browse the latest fully-funded scholarships, training opportunities and competitions updated daily on Khotwa.',
+    kw: 'منح دراسية, scholarships, منح ممولة',
   },
   projects: {
-    ar: 'بنك أفكار مشاريع التخرج: أفكار جاهزة في الذكاء الاصطناعي والبرمجة والهندسة مع خطوات التنفيذ والأدوات المطلوبة، وشارك فكرتك مع الطلاب.',
-    en: 'Graduation project ideas bank: ready ideas in AI, coding and engineering with steps & tools, plus share your own.',
-    kw: 'افكار مشاريع تخرج, مشروع تخرج حاسوب, graduation project ideas, capstone project',
+    ar: 'مكتبة شاملة تضم أفضل أفكار ونماذج مشاريع التخرج الأكاديمية والتطبيقية لمختلف التخصصات الجامعية لمساعدتك في التخطيط عبر منصة خطوة.',
+    en: 'A library of graduation project ideas with implementation steps and tools for various university disciplines on Khotwa.',
+    kw: 'مشاريع تخرج, graduation projects, افكار مشروع',
   },
   notes: {
-    ar: 'مكتبة الملخصات والملاحظات الطلابية: حمّل ملخصات المواد مجاناً أو ارفع ملخصاتك وشاركها مع آلاف الطلاب.',
-    en: 'Student notes library: download course summaries free or upload and share yours with thousands of students.',
-    kw: 'ملخصات جامعية, تحميل ملازم, مشاركة ملاحظات, study notes, lecture notes, course summaries',
+    ar: 'شارك وتصفح آلاف التلخيصات والمل��حظات الدراسية والملازم الأكاديمية المرفوعة من الطلاب في مختلف المواد والتخصصات على منصة خطوة.',
+    en: 'Share and browse thousands of student summaries and lecture notes across subjects and universities on Khotwa.',
+    kw: 'ملخصات, notes library, lecture summaries',
   },
   forums: {
-    ar: 'منتديات نقاش طلابية مصنفة: اسأل وناقش في الرياضيات والبرمجة واللغات والاختبارات والقبول الجامعي مع طلاب من كل مكان.',
-    en: 'Classified student discussion forums: ask & discuss math, coding, languages, exams and admissions with students everywhere.',
-    kw: 'منتدى طلاب, نقاش دراسي, اسئلة جامعية, student forum, study discussion',
+    ar: 'انضم إلى مجتمع الطلاب الأكاديمي في منتديات خطوة للتفاعل وطرح الأسئلة وتبادل الخبرات والنقاش حول المواد والجامعات.',
+    en: 'Join the student academic community in Khotwa forums to ask questions, share experiences and discuss subjects and universities.',
+    kw: 'منتديات, student forum, نقاش طلابي',
   },
   market: {
-    ar: 'سوق الطلاب للكتب والأدوات المستعملة: بِع واشترِ الكتب الجامعية والآلات الحاسبة وأدوات المعامل بأسعار طلابية مباشرة بين الطلاب.',
-    en: 'Student marketplace for used books & gear: buy and sell textbooks, calculators and lab equipment peer-to-peer.',
-    kw: 'كتب جامعية مستعملة, بيع كتب, سوق طلابي, used textbooks, student marketplace',
+    ar: 'سوق طلابي لبيع وشراء وتداول الكتب والمستلزمات الدراسية والأجهزة المستعملة بين الطلاب بأسعار مناسبة عبر منصة خطوة.',
+    en: 'A student marketplace to buy and sell used books and study gear affordably among students on Khotwa.',
+    kw: 'سوق طلابي, used textbooks, بيع كتب',
   },
   guide: {
-    ar: 'دليل الإرشاد الأكاديمي والنفسي: مقالات عملية في إدارة الوقت، قلق الاختبارات، الاحتراق الدراسي، تقنيات المذاكرة الفعالة والدافعية.',
-    en: 'Academic & psychological guide: practical articles on time management, exam anxiety, burnout, effective study techniques and motivation.',
-    kw: 'ادارة الوقت للطلاب, قلق الامتحانات, طرق مذاكرة, study tips, exam anxiety, time management',
+    ar: 'نصائح ومقالات متخصصة في التوجيه الأكاديمي والتعامل مع ضغوط الامتحانات والحياة الجامعية وتطوير المهارات الشخصية عبر منصة خطوة.',
+    en: 'Specialized guidance articles on academic and mental wellbeing: exam anxiety, study techniques and motivation on Khotwa.',
+    kw: 'ارشاد اكاديمي, نصائح دراسة, guidance',
   },
 };
 
@@ -177,6 +167,17 @@ export function usePageMeta(id: string) {
       upsertMeta('keywords', meta.kw);
       upsertMeta('og:title', title, 'property');
       upsertMeta('og:description', meta[lang], 'property');
+      // canonical link
+      let link = document.head.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+      if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        document.head.appendChild(link);
+      }
+      link.href = window.location.href;
+      // og:url and og:type
+      upsertMeta('og:url', window.location.href, 'property');
+      upsertMeta('og:type', 'website', 'property');
     }
   }, [id, lang]);
 }
