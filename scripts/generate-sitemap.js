@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const BASE = 'https://khotwa-weld.vercel.app';
 const routes = [
@@ -33,7 +33,7 @@ const routes = [
 ];
 
 function buildSitemap() {
-  const urlset = routes.map(r => {
+  const urlset = routes.map((r) => {
     const loc = `${BASE}${r.path}`;
     const changefreq = 'weekly';
     const priority = r.priority.toFixed(1);
@@ -42,7 +42,7 @@ function buildSitemap() {
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlset}\n</urlset>\n`;
 
-  const outDir = path.join(__dirname, '..', 'public');
+  const outDir = path.join(process.cwd(), 'public');
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');
   console.log('Generated public/sitemap.xml');
