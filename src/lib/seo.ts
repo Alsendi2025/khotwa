@@ -44,7 +44,7 @@ export const PAGE_META: Record<string, Meta> = {
     kw: 'حاسبة المعدل, GPA calculator, معدل تراكمي',
   },
   math: {
-    ar: 'حل المعادلات الرياضية المعقدة ورسم الدوال البيانية خطوة بخ��وة بالذكاء الاصطناعي عبر أداة محلل الرياضيات المتقدمة مجاناً على منصة خطوة.',
+    ar: 'حل المعادلات الرياضية المعقدة ورسم الدوال البيانية خطوة بخطوة بالذكاء الاصطناعي عبر أداة محلل الرياضيات المتقدمة مجاناً على منصة خطوة.',
     en: 'Solve complex math problems and graph functions step-by-step with the AI-powered Math Analyzer on Khotwa.',
     kw: 'حل مسائل رياضيات, math solver, رسم دوال, graphing calculator',
   },
@@ -64,12 +64,12 @@ export const PAGE_META: Record<string, Meta> = {
     kw: 'تركيز, Pomodoro, مؤقت مذاكرة, focus timer',
   },
   budget: {
-    ar: 'تتبع وادارة ميزانية الطالب ومتابعة المصاريف والمدخرات الشخصية والنفقات التقديرية خلال فترة الدراسة عبر منصة خطوة.',
+    ar: 'تتبع وادارة ميزانية الطالب ومتابعة المصاريف والمدخرات الشخصية والنفقات التقديرية خلال فترة الدراسة الجامعية الذكية عبر منصة خطوة.',
     en: 'Track and manage student budgets, monitor expenses and savings with charts and live balance on Khotwa.',
     kw: 'ميزانية الطالب, expense tracker, تتبع مصاريف',
   },
   'pdf-merge': {
-    ar: 'أدوات دمج وتقسيم ملفات PDF أونلاين مجاناً؛ ادمج عدة مستندات في ملف واحد أو جزئ الملفات الكبيرة بسهولة وأمان على منصة خطوة.',
+    ar: 'أدوات دمج وتقسيم ملفات PDF أونلاين مجاناً؛ ادمج عدة مستندات في ملف واحد أو جزئ الملفات الكبيرة بسهولة وأمان عاليين على منصة خطوة.',
     en: 'Merge and split PDF files online for free; combine documents or extract pages securely on Khotwa.',
     kw: 'دمج PDF, تقسيم PDF, merge split PDF',
   },
@@ -79,64 +79,64 @@ export const PAGE_META: Record<string, Meta> = {
     kw: 'ضغط PDF, ترتيب صفحات, تقليل حجم PDF',
   },
   'pdf-protect': {
-    ar: 'اضف كلمة سر لحماية مستندات PDF الخاصة بك أو فك الحماية عنها بأمان وسرعة تامة دون رفع الملفات على خوادم خارجية.',
-    en: 'Password-protect PDFs or remove passwords locally and securely without uploading files on Khotwa.',
-    kw: 'حماية PDF, فك حماية PDF, كلمة مرور PDF',
+    ar: 'حماية PDF بكلمة مرور أو إزالة الحماية من ملفاتك — تشفير وفك تشفير محلي 100% دون مغادرة الملف لجهازك.',
+    en: 'Password-protect PDFs or remove passwords — 100% local encryption/decryption, files never leave your device.',
+    kw: 'حماية PDF بكلمة سر, فك حماية PDF, تشفير ملفات, protect PDF, unlock PDF, PDF password',
   },
   ocr: {
-    ar: 'حوّل الصور والمستندات الممسوحة ضوئياً إلى نص عربي وإنجليزي قابل للتحرير والنسخ باستخدام أداة OCR الذكية من منصة خطوة.',
-    en: 'Convert images and scanned documents into editable Arabic and English text using Khotwa\'s OCR tool.',
-    kw: 'OCR عربي, تحويل صورة الى نص, استخراج نص',
+    ar: 'استخراج النصوص من الصور (OCR) بالعربية والإنجليزية مجاناً — حوّل صور المستندات والملازم إلى نص قابل للتحرير والنسخ باستخدام أداة OCR من منصة خطوة.',
+    en: 'Free Arabic & English OCR — extract editable text from document photos and scans, right in your browser.',
+    kw: 'استخراج نص من صورة, OCR عربي, تحويل صورة الى نص, image to text, Arabic OCR, Tesseract',
   },
   convert: {
-    ar: 'حوّل صيغ الملفات والمستندات والصور والأوفيس أونلاين بسرعة وبجودة ��الية دون الحاجة لتثبيت برامج عبر أداة تحويل الصيغ في منصة خطوة.',
-    en: 'Convert files and documents online (images, PDFs, PPTX) quickly and with high quality using Khotwa\'s converter.',
-    kw: 'محول صيغ, file converter, تحويل ملفات',
+    ar: 'محول ملفات مجاني: صور إلى PDF، PDF إلى صور PNG عالية الجودة، وعروض PPTX إلى PDF — تحويل فوري محلي دون رفع.',
+    en: 'Free file converter: images to PDF, PDF to high-quality PNG images, and PPTX to PDF — instant local conversion.',
+    kw: 'تحويل صور الى PDF, تحويل PDF الى صور, PPT الى PDF, image to PDF, PDF to image, converter',
   },
   'pdf-watermark': {
-    ar: 'أضف توقيعك الإلكتروني أو علامة مائية مخصصة على ملفات الـ PDF لحماية ملكيتك الفكرية وحقوق أبحاثك الأكاديمية على منصة خطوة.',
-    en: 'Add an electronic signature or custom watermark to PDFs to protect intellectual property on Khotwa.',
-    kw: 'علامة مائية, توقيع PDF, watermark',
+    ar: 'أضف علامة مائية نصية (تدعم العربية) أو وقّع ملفات PDF برسم توقيعك بيدك — أدوات توثيق ملفاتك مجاناً في المتصفح.',
+    en: 'Add a text watermark (Arabic supported) or hand-draw your signature onto PDFs — free document tools in the browser.',
+    kw: 'علامة مائية PDF, توقيع PDF, watermark PDF, sign PDF, إمضاء إلكتروني',
   },
   'image-tools': {
-    ar: 'أدوات معالجة الصور الذكية لإزالة الخلفية بنقرة واحدة وتعديل جودة الصور الشخصية والأكاديمية فورياً مجاناً على منصة خطوة.',
-    en: 'Smart image tools for background removal and instant quality adjustments for profile and academic images on Khotwa.',
-    kw: 'إزالة خلفية, background remover, image editor',
+    ar: 'فلتر ماسح ضوئي لصور المستندات وإزالة خلفية صور السيرة الذاتية — معالجة صور فورية محلية مجاناً.',
+    en: 'Scanner filter for document photos and headshot background remover for CVs — instant free local image processing.',
+    kw: 'إزالة خلفية الصورة, فلتر مسح ضوئي, صورة شخصية للسيرة, background remover, scanner filter',
   },
   majors: {
-    ar: 'استكشف دليل التخصصات الجامعية لمعرفة مجالات العمل المستقبلية وشروط القبول والمحتوى الدراسي لمساعدتك في اختيار تخصصك عبر منصة خطوة.',
-    en: 'Explore university majors, admission requirements and study content to help choose your field via Khotwa\'s majors guide.',
-    kw: 'دليل تخصصات, majors guide, ادارة اختيار تخصص',
+    ar: 'دليل التخصصات والجامعات: موسوعة جامعات اليمن والخليج ومصر والأردن — الكليات والبرامج والدرجات العلمية وروابط رسمية.',
+    en: 'Majors & universities directory: Yemen, Gulf, Egypt & Jordan — faculties, programs and degrees with official links, plus top in-demand majors.',
+    kw: 'دليل الجامعات, تخصصات جامعية, جامعات اليمن, جامعات السعودية, أفضل التخصصات, university guide, majors',
   },
   scholarships: {
-    ar: 'تصفح أحدث المنح الدراسية المموّلة بالكامل والفرص التدريبية والمؤتمرات والمسابقات الطلابية المحدثة يومياً على منصة خطوة.',
-    en: 'Browse the latest fully-funded scholarships, training opportunities and competitions updated daily on Khotwa.',
-    kw: 'منح دراسية, scholarships, منح ممولة',
+    ar: 'بوابة المنح الدراسية: منح ممولة بالكامل للبكالوريوس والماجستير والدكتوراه مع المواعيد وروابط التقديم.',
+    en: 'Scholarships portal: fully-funded bachelor, master & PhD scholarships (Chevening, Fulbright, Erasmus, KAUST) with deadlines and links.',
+    kw: 'منح دراسية مجانية, منح ممولة بالكامل, منح ماجستير, scholarships, fully funded, study abroad',
   },
   projects: {
-    ar: 'مكتبة شاملة تضم أفضل أفكار ونماذج مشاريع التخرج الأكاديمية والتطبيقية لمختلف التخصصات الجامعية لمساعدتك في التخطيط عبر منصة خطوة.',
-    en: 'A library of graduation project ideas with implementation steps and tools for various university disciplines on Khotwa.',
-    kw: 'مشاريع تخرج, graduation projects, افكار مشروع',
+    ar: 'بنك أفكار مشاريع التخرج: أفكار جاهزة في الذكاء الاصطناعي والبرمجة والهندسة مع خطوات التنفيذ والأدوات المقترحة.',
+    en: 'Graduation project ideas bank: ready ideas in AI, coding and engineering with steps & tools, plus share your own.',
+    kw: 'افكار مشاريع تخرج, مشروع تخرج حاسوب, graduation project ideas, capstone project',
   },
   notes: {
-    ar: 'شارك وتصفح آلاف التلخيصات والمل��حظات الدراسية والملازم الأكاديمية المرفوعة من الطلاب في مختلف المواد والتخصصات على منصة خطوة.',
-    en: 'Share and browse thousands of student summaries and lecture notes across subjects and universities on Khotwa.',
-    kw: 'ملخصات, notes library, lecture summaries',
+    ar: 'مكتبة الملخصات والملاحظات الطلابية: حمّل ملخصات المواد مجاناً أو ارفع ملخصاتك وشاركها مع آلاف الطلاب.',
+    en: 'Student notes library: download course summaries free or upload and share yours with thousands of students.',
+    kw: 'ملخصات جامعية, تحميل ملازم, مشاركة ملاحظات, study notes, lecture notes, course summaries',
   },
   forums: {
-    ar: 'انضم إلى مجتمع الطلاب الأكاديمي في منتديات خطوة للتفاعل وطرح الأسئلة وتبادل الخبرات والنقاش حول المواد والجامعات.',
-    en: 'Join the student academic community in Khotwa forums to ask questions, share experiences and discuss subjects and universities.',
-    kw: 'منتديات, student forum, نقاش طلابي',
+    ar: 'منتديات نقاش طلابية مصنفة: اسأل وناقش في الرياضيات والبرمجة واللغات والاختبارات والقبول الجامعي مع طلاب من مختلف الجامعات.',
+    en: 'Classified student discussion forums: ask & discuss math, coding, languages, exams and admissions with students everywhere.',
+    kw: 'منتدى طلاب, نقاش دراسي, اسئلة جامعية, student forum, study discussion',
   },
   market: {
-    ar: 'سوق طلابي لبيع وشراء وتداول الكتب والمستلزمات الدراسية والأجهزة المستعملة بين الطلاب بأسعار مناسبة عبر منصة خطوة.',
-    en: 'A student marketplace to buy and sell used books and study gear affordably among students on Khotwa.',
-    kw: 'سوق طلابي, used textbooks, بيع كتب',
+    ar: 'سوق الطلاب للكتب والأدوات المستعملة: بِع واشترِ الكتب الجامعية والآلات الحاسبة وأدوات المعامل بأسعار طلابية مباشرة بين الطلاب.',
+    en: 'Student marketplace for used books & gear: buy and sell textbooks, calculators and lab equipment peer-to-peer.',
+    kw: 'كتب جامعية مستعملة, بيع كتب, سوق طلابي, used textbooks, student marketplace',
   },
   guide: {
-    ar: 'نصائح ومقالات متخصصة في التوجيه الأكاديمي والتعامل مع ضغوط الامتحانات والحياة الجامعية وتطوير المهارات الشخصية عبر منصة خطوة.',
-    en: 'Specialized guidance articles on academic and mental wellbeing: exam anxiety, study techniques and motivation on Khotwa.',
-    kw: 'ارشاد اكاديمي, نصائح دراسة, guidance',
+    ar: 'دليل الإرشاد الأكاديمي والنفسي: مقالات عملية في إدارة الوقت، قلق الاختبارات، الاحتراق الدراسي، تقنيات المذاكرة الفعالة والدافعية.',
+    en: 'Academic & psychological guide: practical articles on time management, exam anxiety, burnout, effective study techniques and motivation.',
+    kw: 'ادارة الوقت للطلاب, قلق الامتحانات, طرق مذاكرة, study tips, exam anxiety, time management',
   },
 };
 
@@ -148,6 +148,17 @@ function upsertMeta(name: string, content: string, attr: 'name' | 'property' = '
     document.head.appendChild(el);
   }
   el.setAttribute('content', content);
+}
+
+function upsertJsonLd(obj: object, dataId = 'khotwa-jsonld') {
+  let el = document.head.querySelector(`script[type="application/ld+json"][data-id="${dataId}"]`) as HTMLScriptElement | null;
+  if (!el) {
+    el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.setAttribute('data-id', dataId);
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(obj, null, 2);
 }
 
 /** يضبط وسم العنوان والوصف والكلمات المفتاحية للصفحة الحالية */
@@ -178,6 +189,29 @@ export function usePageMeta(id: string) {
       // og:url and og:type
       upsertMeta('og:url', window.location.href, 'property');
       upsertMeta('og:type', 'website', 'property');
+
+      // JSON-LD structured data
+      const jsonLd: any = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": title,
+        "url": window.location.href,
+        "description": meta ? meta[lang] : BRAND[lang],
+        "publisher": {
+          "@type": "Organization",
+          "name": BRAND[lang],
+          "url": "https://khotwa-weld.vercel.app"
+        }
+      };
+      if (svc) {
+        jsonLd.mainEntity = {
+          "@type": "Service",
+          "serviceType": svc.name[lang],
+          "url": window.location.href,
+          "description": meta ? meta[lang] : undefined
+        };
+      }
+      upsertJsonLd(jsonLd, `khotwa-${id}`);
     }
   }, [id, lang]);
 }
